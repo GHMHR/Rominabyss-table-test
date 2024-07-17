@@ -27,7 +27,7 @@
     <div class="container">
 
         <div class="alert alert-success mb-3" role="alert">
-            <p>Rominabyss差分test 表の外で実験AI完コピスクリプト消した。次期難易度表フォーマット対応。</p>
+            <p>Rominabyss差分test 表の外で実験AI完コピスクリプト消したデフォ非表示。次期難易度表フォーマット対応。</p>
             <p>難易度表の読み込みと表示に数秒かかります。</p>
             <hr>
             <p class="mb-0">難易度はbeatorajaゲージに準じます。この表はladymade-star氏のbms-table-templateを元に作成しています。<br>
@@ -42,6 +42,9 @@
                     $('#toggleButton').on('click', function () {
                         $('#comment').toggle();
                     });
+                });
+                document.addEventListener('DOMContentLoaded', function () {
+                    document.getElementById('comment').style.display = 'none';
                 });
             </script>
             
