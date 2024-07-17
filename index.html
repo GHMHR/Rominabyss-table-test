@@ -27,14 +27,25 @@
     <div class="container">
 
         <div class="alert alert-success mb-3" role="alert">
-            <p>Rominabyss差分test 表の外で実験。次期難易度表フォーマット対応。</p>
+            <p>Rominabyss差分test 表の外で実験AI完コピ。次期難易度表フォーマット対応。</p>
             <p>難易度表の読み込みと表示に数秒かかります。</p>
             <hr>
             <p class="mb-0">難易度はbeatorajaゲージに準じます。この表はladymade-star氏のbms-table-templateを元に作成しています。<br>
                 譜面配布場所: <a href="https://drive.google.com/drive/folders/1zYl7D9ENBbB4LIvZrEm1wZVTHK4HC6X3">https://drive.google.com/drive/folders/1zYl7D9ENBbB4LIvZrEm1wZVTHK4HC6X3</a><br>
                 X/Twitter: <a href="https://x.com/rominabyss">https://x.com/rominabyss</a>
             </p>
-            <p><a href="javaScript:menu("commentdata")">→</a></p>
+            
+            <button id="toggleButton">→</button>
+            <div id="comment">これはコメントです</div>
+            <script src="https://code.jquery.com/jquery.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $('#toggleButton').on('click', function () {
+                        $('#comment').toggle();
+                    });
+                });
+            </script>
+            
         </div>
 
 
