@@ -108,9 +108,8 @@
                     $("<td width='40%'>" + info[i].artist + "</td>").appendTo(str);
 
                     // Comment
-                    $("<td width='10%'>" + 
-                      "<button id=" + "toggleButton" + ">→</button><div id=" + "comment" + ">" + info[i].comment + "</div></td>").appendTo(str);
-                    
+                    $("<td width='10%'>" + info[i].comment + "</td>").appendTo(str);
+                      //"<button id=" + "toggleButton" + ">→</button><div id=" + "comment" + ">" + info[i].comment + "</div></td>").appendTo(str);                    
                     str.appendTo(obj);
                     count++;
 
