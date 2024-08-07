@@ -126,9 +126,10 @@
                     $("<td width='40%'>" + info[i].artist + "</td>").appendTo(str);
 
                     // Comment
-                    $("<td width='10%'> <button id=" + "toggleButton" + ">→</button><div id=" "comment" ">" + 
-                        info[i].comment + 
-                        "</div><script>$('#toggleButton').click(function(){$('#comment').toggle();});$('#comment').hide();</script></td>").appendTo(str);
+                    $("<td width='10%'>" + 
+                      "<button id='toggleButton'>→</button><div id='commentCell'>" + info[i].comment + 
+                      "</div><script> $('#toggleButton').click(function() {$('#commentCell').toggle();} ); $('#commentCell').hide();</script></td>").appendTo(str);
+
                     str.appendTo(obj);
                     count++;
 
