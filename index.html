@@ -27,7 +27,7 @@
     <div class="container">
 
         <div class="alert alert-success mb-3" role="alert">
-            <p>Rominabyss差分test 表の外で実験。AI完コピ。スクリプト消した。デフォ非表示。表にボタンのみ実装""つけた増やした。div追加""減らした+増やした。ヘッダーボタンに方針内容追加編集。ボタン右寄せ別同じ行pタグ位置。次期難易度表フォーマット対応。二個目のスクリプト改変。p消した2。スクリプト3 hide。スクリプト2Hide。コメントスクリプト</p>
+            <p>Rominabyss差分test 表の外で実験。AI完コピ。スクリプト消した。デフォ非表示。表にボタンのみ実装""つけた増やした。div追加""減らした+増やした。ヘッダーボタンに方針内容追加編集。ボタン右寄せ別同じ行pタグ位置。次期難易度表フォーマット対応。二個目のスクリプト改変。p消した2。スクリプト3 hide。スクリプト2Hide。コメントスクリプト。コメントアウト</p>
             <p>難易度表の読み込みと表示に数秒かかります。</p>
             <hr>
             <p class="mb-0">難易度はbeatorajaゲージに準じます。この表はladymade-star氏のbms-table-templateを元に作成しています。<br>
@@ -127,8 +127,8 @@
 
                     // Comment
                     $("<td width='10%'>" + 
-                      "<button id='toggleButton'>→</button><div id='commentCell'>" + info[i].comment + 
-                      "</div><script>$('#toggleButton').click(function(){$('#commentCell').toggle();});$('#commentCell').hide();</script></td>").appendTo(str);
+                      "<button id='toggleButton'>→</button><div id='commentCell'>" + info[i].comment + "</div></td>").appendTo(str);
+                      //"</div><script>$('#toggleButton').click(function(){$('#commentCell').toggle();});$('#commentCell').hide();</script></td>").appendTo(str);
 
                     str.appendTo(obj);
                     count++;
