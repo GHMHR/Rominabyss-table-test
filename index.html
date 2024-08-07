@@ -52,8 +52,8 @@
                 });
             </script>
 
-            <button id="toggleButton2">→</button>
-            <div id="comment2">二個目のスクリプト</div>
+            <button id='toggleButton2'>→</button>
+            <div id='comment2'>二個目のスクリプト</div>
             <script>
                 $('#toggleButton2').click(function() {
                     $('#comment2').toggle();
@@ -128,7 +128,7 @@
                     // Comment
                     $("<td width='10%'>" + 
                       "<button id='toggleButton'>→</button><div id='commentCell'>" + info[i].comment + 
-                      "</div><script> $('#toggleButton').click(function() {$('#commentCell').toggle();} ); $('#commentCell').hide();</script></td>").appendTo(str);
+                      "</div><script>$('#toggleButton').click(function(){$('#commentCell').toggle();});$('#commentCell').hide();</script></td>").appendTo(str);
 
                     str.appendTo(obj);
                     count++;
